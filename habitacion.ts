@@ -1,3 +1,4 @@
+
 export abstract class Habitacion {
     protected numero: number;
     protected estado: boolean;
@@ -30,7 +31,4 @@ export abstract class Habitacion {
     }
 
    
-
-
-
 }
