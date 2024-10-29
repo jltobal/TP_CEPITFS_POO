@@ -1,38 +1,37 @@
 import { Habitacion } from "./habitacion";
+import { Servicios } from "./servicios";
 
-export class HabitacionStandard extends Habitacion{
+export class HabitacionStandard extends Habitacion {
 
-    private limpieza : boolean;
-    private iva = 1.21;
+    private limpieza: boolean;
+    private iva: number = 1.21;
 
-    constructor(numero: number, estado: boolean, precioBase: number, limpieza : boolean){
+    constructor(numero: number, estado: boolean, precioBase: number, limpieza: boolean) {
         super(numero, estado, precioBase);
         this.limpieza = limpieza;
     }
 
     public reservar(): void {
-        if (this.estado == false){
-            this.estado = true;
-        }else{
-            console.log("No se puede reservar la habitacion");
+        if (!this.getEstado()) {
+            this.setEstado(true);
+        } else {
+            console.error("No se puede reservar la habitación porque ya está ocupada");
         }
     }
 
     public liberar(): void {
-        if (this.estado == true){
-            this.estado = false;
-        }else{
-            console.log("La habitacion no esta ocupada");
+        if (this.getEstado()) {
+            this.setEstado(false);
+        } else {
+            console.error("La habitación no está ocupada");
         }
     }
 
     public getCostoTotal(): number {
-        let precio = 0;
-        if(this.limpieza == true){
-            this.precioBase = this.precioBase *1.10; // 10% adicional de limpieza
+        let precio = this.getPrecioBase();
+        if (this.limpieza) {
+            precio *= 1.10; // 10% adicional de limpieza
         }
-        precio = this.precioBase * this.iva; //Se agrega 21% de IVA
-        return precio;
+        return precio * this.iva; // Se agrega 21% de IVA
     }
-
 }
