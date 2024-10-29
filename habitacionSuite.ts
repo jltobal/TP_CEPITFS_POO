@@ -1,6 +1,6 @@
 import { Habitacion } from "./habitacion";
 
-class HabitacionSuite extends Habitacion{
+export class HabitacionSuite extends Habitacion{
 
     protected desayuno : boolean;
     protected allInclusive : boolean;
@@ -30,7 +30,7 @@ class HabitacionSuite extends Habitacion{
         }else if(this.desayuno == true){
             this.precioBase = this.precioBase *1.20; // 20% adicional de desayuno
         }
-        
+
         precio = this.precioBase * 1.21; //Se agrega 21% de IVA
         return precio;
     }
