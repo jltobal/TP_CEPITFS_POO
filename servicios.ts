@@ -1,7 +1,7 @@
 
 export class Servicios{
-    private nombre:string;
-    private precio:number;
+    public nombre:string;
+    public precio:number;
 
     constructor(nombre:string, precio:number){
         this.nombre = nombre;

@@ -6,13 +6,17 @@ var Habitacion = /** @class */ (function () {
         this.numero = numero;
         this.estado = estado;
         this.precioBase = precioBase;
-        this.servicio = [];
+        this.servicios = [];
     }
     Habitacion.prototype.setServicio = function (nuevoServicio) {
-        this.servicio.push(nuevoServicio);
+        this.servicios.push(nuevoServicio);
     };
-    Habitacion.prototype.getServicio = function () {
-        return this.servicio;
+    Habitacion.prototype.setServicios = function (nuevosServicios) {
+        var _a;
+        (_a = this.servicios).push.apply(_a, nuevosServicios);
+    };
+    Habitacion.prototype.getServicios = function () {
+        return this.servicios;
     };
     Habitacion.prototype.getNumero = function () {
         return this.numero;
