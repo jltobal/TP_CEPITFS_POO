@@ -1,0 +1,104 @@
+Volviendo.... zoom?
+
+Bien... usa el meet
+
+Yo uso Git Bash para clonar los repositorios.
+En la carpeta donde voy a poner el codigo abro una consola de Git Bash
+
+El comando para clonar es git clone + la url del repositorio
+en mi caso, ahora tengo que cerrar la consola y abrirla 
+dentro de la carpeta clonada
+
+La carpeta del repositorio siempre tiene una carpeta oculta llamada .git
+es en ese lugar donde tenemos que ejecutar el codigo... 
+
+En este caso voy a modificar algo del proyecto para despues hacer
+un push. Es decir, actualizar el repositorio en la "nube" con
+las modificaciones que hice de manera local.
+
+pepito funciono.
+
+ahora podemos ver la diferencia de mi repositorio local con el 
+codigo
+
+git status
+
+mala ruta...
+ahora si... aparece en rojo lo que esta modificado y son cambios
+que no se actualizaron en el repositorio. 
+
+Ejecutamos el comando git add para sumar los archivos para hacer un
+commit
+
+puede ser git add + nombre de archivo
+o git add .     para sumar todo. (el punto . generaliza)
+
+al hacer el add del main ya aparece en verde, listo para el commit.
+
+ahora pruebo el general.
+ahora estan ambos archivos litos para el commit. 
+
+se hace el commit (obligatorio) para pushear. el comando es:
+
+git commit -m "mensaje"
+
+Donde va el mensaje que luego se va a ver en el repositorio
+en la consola se ve que se modificaron esos archivos con el commit
+
+Teniendo esto listo ahora "pusheamos" los cambios al repositorio con
+el comando git push
+
+Los cambios fueron modificados y podemos verlo en el repositorio
+
+
+main.js     mensaje pepito
+
+
+Ahora a la inversa... voy a modificar el archivo readme en el repositorio
+para luego hacer un pull
+
+Ya se modifico el Readme
+
+
+Ahora si hacemos un git status, no nos dice que tenemos cambios 
+pendientes. Esto es porque la consola compara lo clonado de forma
+local con las modificaciones locales. No sabe que se modificaron 
+cosas en el repositorio. 
+
+Por eso siempre es buena practica hacer un pull antes de comenzar
+a trabajar en un codigo colaborativo. 
+
+hacemos git pull para traer del repositorio los cambios del archivo
+readme.
+
+En lo actualizado muestra que el archivo Readme.md se modificaron 3 lineas. 
+
+ahora estoy nuevamente al dia. 
+
+¿Preguntas?
+de hecho si necesitas. 
+Yo no se si ivo hizo una modificacion cuando yo me fui a tomar un mate
+por eso hay que hacer pull, digamos, medio cada tanto. 
+
+Generalmente se trabaja en branches y uno maneja su propio branch
+y no hay problemas de ese estilo. 
+
+
+En este caso que todos estamos en el mismo main, si. 
+
+
+Exacto. 
+
+En realidad una vez que entendes como funciona cada comando es sencillo...
+
+git status
+git add .
+git commit -m " "
+git push
+git pull
+
+
+
+
+
+
