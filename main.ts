@@ -17,7 +17,11 @@ const serviciosBasicos1 = [
     new Servicios("limpieza", 10),
 ]
 
+const servicioPremium = new Servicios("Starlink", 45);
+
+
 hab4.setServicios(serviciosBasicos1);
+hab4.setServicio(servicioPremium);
 
 console.log(hab4.getServicios());
 

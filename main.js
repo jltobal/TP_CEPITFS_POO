@@ -13,5 +13,7 @@ var serviciosBasicos1 = [
     new servicios_1.Servicios("wifi", 20),
     new servicios_1.Servicios("limpieza", 10),
 ];
+var servicioPremium = new servicios_1.Servicios("Starlink", 45);
 hab4.setServicios(serviciosBasicos1);
+hab4.setServicio(servicioPremium);
 console.log(hab4.getServicios());
