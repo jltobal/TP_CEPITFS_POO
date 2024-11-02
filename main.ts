@@ -21,12 +21,10 @@ const servicioPremium = new Servicios("Starlink", 45);
 
 
 hab4.setServicios(serviciosBasicos1);
-hab4.getCostoTotal();
+console.log(hab4.getCostoTotal());
 hab4.setServicio(servicioPremium);
 
 console.log(hab4.getServicios());
-hab4.getCostoTotal();
-
-console.log("pepito");
+console.log(hab4.getCostoTotal());
 
 

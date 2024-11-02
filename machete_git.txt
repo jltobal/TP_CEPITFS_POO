@@ -97,6 +97,16 @@ git commit -m " "
 git push
 git pull
 
+Este txt ya fue "pusheado" al repositorio
+
+
+
+Marcelo dijo que hizo un branch.. efectivamente esta hecho
+
+Si se fijan dice "behind" 3|0
+
+Esa rama tiene 3 cambios atrasados que deben ser los del txt y/o readme
+
 
 
 

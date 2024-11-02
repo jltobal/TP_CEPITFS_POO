@@ -1,0 +1,37 @@
+COMANDOS DE GIT
+
+Clonar repositorio:
+$git clone url
+(remplazar url por la direccion del repositorio)
+
+Ver el estado del proyecto local:
+$git status
+
+Agregar un archivo al commit (ejemplo main.ts):
+$git add main.ts
+
+Agregar TODOS los archivos al commit:
+$git add .
+
+Realizar un commit (reemplazar pepe por el mensaje):
+$git commit -m "pepe"
+
+Hacer un push de los cambios (subir al repositorio las modificaciones locales):
+$git push
+
+
+//BRANCHES//
+Crear una rama (reemplazar pepe por un nombre de la rama):
+$git branch pepe
+
+Moverse a una rama (reemplazar pepe por el nomnbre de la rama al moverse):
+$git checkout pepe
+
+Volver a la rama Main:
+$git checkout main
+
+Unir ramas (SE HACE DESDE EL MAIN, volver a la rama main previamente)(reemplazar pepe por la rama a unir):
+$git merge pepe
+
+Eliminar una rama (reemplazar pepe por el nomnbre de la rama a eliminar):
+$git branch -d pepe
